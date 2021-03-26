@@ -4,7 +4,8 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable 
+`vetur.experimental.templateInterpolationService` in settings!
 
 ### If Using `<script setup>`
 
@@ -25,3 +26,9 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 3. Open `src/main.ts` in VSCode
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
+
+### 安装步骤
+
+1. npm init @vitejs/app my-vue-app --template vue-ts
+2. npm install vue-router@4 --save(路由)
+3. npm i vuex@next --save(vuex)
