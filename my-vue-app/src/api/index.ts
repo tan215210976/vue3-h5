@@ -1,16 +1,16 @@
 import axios from "axios";
 const service = axios.create({
-  baseURL,
+  baseURL:'/',
   timeout: 5000 // request timeout
 });
 // 发起请求之前的拦截器
 service.interceptors.request.use(
   config => {
     // 如果有token 就携带tokon
-    const token = window.localStorage.getItem("accessToken");
-    if (token) {
-      config.headers.Authorization = token;
-    }
+    // const token = window.localStorage.getItem("accessToken");
+    // if (token) {
+    //   config.headers.Authorization = token;
+    // }
     return config;
   },
   error => Promise.reject(error)

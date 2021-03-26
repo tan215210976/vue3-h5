@@ -1,8 +1,12 @@
 <template>
-  <router-view></router-view>
-  <van-tabbar v-model="active">
-    <van-tabbar-item v-for="(item,index) in tabList" :key="index">{{item.label}}</van-tabbar-item>
-  </van-tabbar>
+  <div class="layout-default">
+    <div class="default-main">
+      <router-view></router-view>
+    </div>
+    <van-tabbar v-model="active" :fixed="false">
+      <van-tabbar-item v-for="(item,index) in tabList" :key="index">{{item.label}}</van-tabbar-item>
+    </van-tabbar>
+  </div>
 </template>
 
 <script>
@@ -29,7 +33,13 @@ export default {
 </script>
 
 <style lang="scss">
-.main-home {
+.layout-default {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .default-main {
+    flex: 1;
+  }
 }
 </style>
