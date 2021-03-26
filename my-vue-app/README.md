@@ -27,8 +27,10 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
 
-### 安装步骤
+### installation procedure
 
 1. npm init @vitejs/app my-vue-app --template vue-ts
 2. npm install vue-router@4 --save(路由)
 3. npm i vuex@next --save(vuex)
+
+### project structure
